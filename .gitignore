@@ -1,0 +1,6 @@
+# exclude files in data
+src/jupyter/POLAR/*
+src/dataset/.data/*
+src/dataset/.vector_cache/*
+src/web_evaluater/node_modules/*
+src/web_evaluater/public/build/*

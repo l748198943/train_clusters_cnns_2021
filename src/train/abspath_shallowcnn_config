@@ -1,0 +1,25 @@
+# write arguments of training/testing here
+action=test
+model=shallowCNN
+max_sen_len=129
+num_class=2
+epoch=4
+cv=0
+dropout=0.5
+# freeze embedding layer
+freeze=True
+output_path=/home/sj/Documents/lecture_projects/master_thesis_2020/explain_cnn_text_classifiers/data/models/yelp_polarity_DPCNN/
+input_path=/home/sj/Documents/lecture_projects/master_thesis_2020/explain_cnn_text_classifiers/data/datasets/yelp_polarity
+channel_size=20
+embed_path=/home/sj/Documents/lecture_projects/master_thesis_2020/explain_cnn_text_classifiers/data/embeddings/polar/selected1275_yelp
+w2i=/home/sj/Documents/lecture_projects/master_thesis_2020/explain_cnn_text_classifiers/data/embeddings/glove/yelp_polarity
+i2w=/home/sj/Documents/lecture_projects/master_thesis_2020/explain_cnn_text_classifiers/data/embeddings/glove/yelp_polarity
+
+# for testing
+load_model_from=/home/sj/Documents/lecture_projects/master_thesis_2020/explain_cnn_text_classifiers/data/models/yelp_polarity_shallowCNN/new_polar1275-3-139.model
+load_dim_names=/home/sj/Documents/lecture_projects/master_thesis_2020/explain_cnn_text_classifiers/data/embeddings/polar/selected1275_yelp/b1275.pkl
+
+#check gradients
+gradients=False
+forward_embed=True
+

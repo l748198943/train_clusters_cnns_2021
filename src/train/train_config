@@ -1,0 +1,25 @@
+# write arguments of training/testing here
+action=test
+model=DPCNN
+max_sen_len=129
+num_class=2
+epoch=4
+cv=0
+dropout=0.5
+# freeze embedding layer
+freeze=True
+output_path=../../data/models/yelp_polarity_DPCNN/
+input_path=../../data/datasets/yelp_polarity
+channel_size=20
+embed_path=../../data/embeddings/polar/selected1275_yelp
+w2i=../../data/embeddings/glove/yelp_polarity
+i2w=../../data/embeddings/glove/yelp_polarity
+
+# for testing
+load_model_from=../../data/models/yelp_polarity_DPCNN/new_polar1275-3-139.model
+load_dim_names=../../data/embeddings/polar/selected1275_yelp/b1275.pkl
+
+#check gradients
+gradients=True
+forward_embed=True
+

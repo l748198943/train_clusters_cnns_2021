@@ -1,0 +1,27 @@
+# write arguments of training/testing here
+action=test
+model=shallowCNN
+max_sen_len=50
+num_class=2
+epoch=10
+batch=500
+cv=0
+dropout=0.5
+# freeze embedding layer
+freeze=False
+output_path=../../data/models/sst_DPCNN/
+input_path=../../data/datasets/stanfordSentimentTreebank
+channel_size=20
+embed_path=../../data/embeddings/glove/sst/
+w2i=../../data/embeddings/glove/sst
+i2w=../../data/embeddings/glove/sst
+
+# for testing
+load_model_from=../../data/models/sst_DPCNN/sst_test_unfreezed_random_10.model
+load_dim_names=../../data/embeddings/polar/temp513_sst/a513.pkl
+
+#check gradients
+gradients=False
+#use embedding layer
+forward_embed=True
+

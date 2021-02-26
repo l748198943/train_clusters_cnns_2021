@@ -1,0 +1,25 @@
+# write arguments of training/testing here
+action=test
+model=shallowCNN
+max_sen_len=400
+num_class=2
+epoch=4
+cv=0
+dropout=0.5
+batch=200
+# freeze embedding layer
+freeze=True
+output_path=../../data/models/imdb_shallowCNN/polar/
+input_path=../../data/datasets/Imdb/
+channel_size=20
+embed_path=../../data/embeddings/polar/b1275_imdb/
+w2i=../../data/embeddings/polar/b1275_imdb/
+i2w=../../data/embeddings/polar/b1275_imdb/
+# for testing
+load_model_from=../../data/models/imdb_shallowCNN/polar/polar_14.model
+load_dim_names=../../data/embeddings/polar/selected1275_yelp/b1275.pkl
+
+#If check gradients and generate outputs
+gradients=False
+forward_embed=True
+
